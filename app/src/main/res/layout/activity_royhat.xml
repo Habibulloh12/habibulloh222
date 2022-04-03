@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoyhatActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="236dp"
+        android:backgroundTint="#1AFF00"
+        android:id="@+id/card1"
+
+        android:layout_gravity="center"
+        android:layout_height="80dp"
+        app:cardElevation="15sp"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintBottom_toTopOf="@id/card2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:text="Add movie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="236dp"
+        android:backgroundTint="#1AFF00"
+        android:id="@+id/card2"
+        android:layout_height="80dp"
+        app:cardElevation="15sp"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card1" >
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:text="Menyu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
